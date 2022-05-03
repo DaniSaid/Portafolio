@@ -1,0 +1,19 @@
+#container{
+display:grid;
+gap: 2px;
+grid-template-columns:repeat(3, 1fr);
+grid-template-rows: 1, minmax(50px, auto);
+}
+
+.izq{
+    justify-self: start;
+}
+
+.cnt{
+    justify-self: center;
+}
+
+.rgt{
+    justify-self: center;
+    align-self:center;
+}
