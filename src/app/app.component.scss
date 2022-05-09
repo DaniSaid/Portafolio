@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 #container{
     display: grid;
     grid-template-columns: repeat(10, 1fr);
@@ -40,3 +41,11 @@
 .bottom{
     grid-area: bttm;
 }
+=======
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  background-color: black;
+}
+>>>>>>> Stashed changes

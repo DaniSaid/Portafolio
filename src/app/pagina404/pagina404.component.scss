@@ -1,0 +1,62 @@
+
+*{
+    background-color: #000;
+}
+#container{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: grid;/*declara que este container es el grid
+
+    /*formas de declarar columnas dentro del grid*/
+    
+    /*grid-template-columns: 30% 20% 50%;// columnas*/
+    /*grid-template-columns: 1fr 2fr 1fr;*/
+    grid-template-columns: repeat(3, 33.3%);/*crea 3 columnas iguales*/
+    
+    /*Formas de declarar filas (las filas en caso de no se especificadas crean de forma automatica)*/
+    grid-template-rows: repeat(2, minmax(100px,auto));
+    /*grid-template-rows: 200px 400px 600px; El ej declara 3 filas con diferentes alturas
+    /*grid-template-rows: 200px 300px 200px 400px;
+    /*grid-template-rows: minmax(200px, auto); si el contenido dentro de un elemento ej :<p></p> supera los 200px 
+    de alto de la fila, entonces la fila del grid se ajusta automaticamente*/
+
+    /* Gap
+    column-gap: ;
+    row-gap: ;
+    */
+    gap: 5px;
+    width: 100vw;
+    height: 100vh;
+    max-width: 960px;
+    margin: 0;
+
+    grid-template-areas: "uno uno uno"
+    "dos dos dos"
+    "tres tres tres"
+    ;
+
+}
+#container div{
+    background-color: #3bbced;
+    padding: 30px;
+}
+#container div:nth-child(even){
+    background-color: #777;
+}
+
+.uno{
+    /*grid-column-start: 1;declara sobre la linea del grid queremos ubicar el elemento con la clase uno
+    grid-column-end: 3;termina en la linea 3*/
+    grid-area: uno; /*forma resumida*/
+}
+
+.dos{
+    grid-area: dos;
+}
+
+h4, p, a, strong{
+    background-color: #777;
+}
