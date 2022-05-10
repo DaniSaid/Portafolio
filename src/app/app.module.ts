@@ -5,7 +5,8 @@ import { AppComponent } from './app.component';
 import { ToolbarComponent } from './toolbar/toolbar.component';
 import { LoginComponent } from './login/login.component';
 import {LoginButtonComponent} from './login-button/login-button.component';
-import { ReturnButtonComponent } from './return-button/return-button.component'
+import { ReturnButtonComponent } from './return-button/return-button.component';
+import { HomeComponent } from './home/home.component'
 
 
 @NgModule({
@@ -14,7 +15,8 @@ import { ReturnButtonComponent } from './return-button/return-button.component'
     ToolbarComponent,
     LoginButtonComponent,
     LoginComponent,
-    ReturnButtonComponent
+    ReturnButtonComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule
