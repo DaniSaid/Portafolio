@@ -2,24 +2,27 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
+import { AppRoutingModule } from './app-routing.module';
+
 import { ToolbarComponent } from './toolbar/toolbar.component';
+import { LoginButtonComponent} from './login-button/login-button.component';
+import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
-import {LoginButtonComponent} from './login-button/login-button.component';
-import { ReturnButtonComponent } from './return-button/return-button.component';
-import { HomeComponent } from './home/home.component'
+import { Pagina404Component } from './pagina404/pagina404.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
+    HomeComponent,
     ToolbarComponent,
     LoginButtonComponent,
     LoginComponent,
-    ReturnButtonComponent,
-    HomeComponent
+    Pagina404Component,
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
