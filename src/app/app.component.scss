@@ -1,51 +1,6 @@
-<<<<<<< Updated upstream
-#container{
-    display: grid;
-    grid-template-columns: repeat(10, 1fr);
-    grid-auto-rows:minmax(90px, auto);
-    gap: 5px;
-    max-width: 960px;
-    margin: 0 auto;
-    
-    grid-template-areas: 
-        "tbar tbar tbar tbar tbar tbar tbar tbar tbar tbar"
-        "izq main main main main main main main main main"
-        "izq main main main main main main main main main"
-        "izq main main main main main main main main main"
-        "izq main main main main main main main main main"
-        "izq main main main main main main main main main"
-        "izq main main main main main main main main main"
-        "bttm bttm bttm bttm bttm bttm bttm bttm bttm bttm"
-        ;
-}
-#container div{
-    background: #3bbced;
-    padding: 30px;
-}
-#container div:nth-child(even){
-    background: #777;
-}
-
-.izq{
-    grid-area: izq;
-}
-.top{
-    grid-area: tbar;
-}
-.right{
-    grid-area: rgt;
-}
-.main{
-    grid-area: main;
-}
-.bottom{
-    grid-area: bttm;
-}
-=======
 *{
   box-sizing: border-box;
   padding: 0;
   margin: 0;
   background-color: black;
 }
->>>>>>> Stashed changes
