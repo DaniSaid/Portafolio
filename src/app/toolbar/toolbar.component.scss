@@ -1,19 +1,22 @@
+
 #container{
 display:grid;
 gap: 2px;
 grid-template-columns:repeat(3, 1fr);
-grid-template-rows: 1, minmax(50px, auto);
+grid-template-rows: minmax(50px, 70px);
+padding: 5px;
 }
-
 .izq{
+    align-self: center;
     justify-self: start;
 }
 
 .cnt{
-    justify-self: center;
+    align-self: center;
+    justify-self: end;
 }
 
-.rgt{
-    justify-self: center;
-    align-self:center;
+.der{
+    align-self: center;
+    justify-self: auto;
 }
