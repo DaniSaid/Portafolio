@@ -1,78 +1,74 @@
-/*dandole estilo al boton*/
+// paleta de colores
+$base:#F1E0AC;
+//letras
+$l1: #442c2e;
+
 .container{
   display: flex;
   justify-content: center;
   flex-direction:column;
-  align-items:center;
+  align-items: center;
 }
-//colores
-$Azul1: #444974;
-$Azul2:#74959A;
-$Azul3:#24A19C;
-$Amarillo:#F1E0AC;
+
 a{
   position: absolute;
   text-decoration: none;
-  background: rgba($Azul1, 0.363);
-  color: $Amarillo;
-  border:none;
+  background: rgba($base, 0.308);
+  color: $l1;
+  border: none;
   padding: 7px 0;
-  
+
   &:hover{
-    color: $Azul1;
-    background: rgba($Azul2, 0.363);
+    color:rgb(50, 50, 50);
+    background: rgba($base, 0.363);
   }
 }
 
 .btn{
-  background: $Azul2;
-  color: $Azul1;
+  background-color: black;
+  color: $l1;
   cursor: pointer;
   
-  font-size: 11px;
+  font-size: 14px;
   font-weight: 400;
-  width: 100%;
-  max-width: 100px;
   line-height: 10px;
-  margin: 2px 5px;
     
   &:hover { 
       text-decoration: none; 
   }
 }
 
+
 .btn-l{
-  background: darken(rgba($Azul1, 0.5), 1.5%);
-  color: $Amarillo;
-  font-weight: 100;
-  letter-spacing: 1px;
-
-  svg {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    left: 0;
-    top: 0;
-  }
-
-  rect {
-    fill: none;
-    stroke: $Azul3;
-    stroke-width: 5;
-    stroke-dasharray: 100, 20;
-    transition: all 0.55s linear;
-  }
-
+    color: $l1;
+    font-weight: 600;
+  
+    svg {
+      fill: none;
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+  
+    rect {
+      stroke: $l1;
+      stroke-width: 4;
+      stroke-dasharray: 80, 30, 80;
+      transition: all 0.75s linear;
+    }
+    text{
+      fill:$l1
+    }
 }
 .btn-l:hover {
-  background: rgba($Azul2, 0);
-  font-weight: 900;
-  letter-spacing: 1.5px;
+  background: rgba(39, 39, 112, 0);
+  font-size: 16px;
+  letter-spacing: 1px;
   
   rect {
-    stroke-width: 3;
-    stroke-dasharray: 100, 30;
-    stroke-dashoffset: 160;
-    transition: all 2.55s cubic-bezier(0.19, 1, 0.22, 1);
+    stroke-width: 5;
+    stroke-dasharray: 20, 100;
+    stroke-dashoffset: 158%;
+    transition: all 2.5s cubic-bezier(0.19, 1, 0.22, 1);
   }
 }

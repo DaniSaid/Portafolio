@@ -1,6 +1,22 @@
 /* You can add global styles to this file, and also import other style files */
+/* paleta de colores*/
+$base: #EDE6DB;
+$pri:#1A3C40;
+$sec: #1D5C63;
+$ter: #417D7A;
+/*color letras*/
+$l1: #442c2e;
+
+*{
+    background-color: rgba( $base, 0.774);
+  }
+
 body{
     color: #fff;
     font-family: 'Nunite Semibold';
     text-align: center;
+}
+
+p{ 
+    color: $l1;
 }

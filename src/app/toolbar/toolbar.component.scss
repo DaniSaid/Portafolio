@@ -3,12 +3,13 @@
 display:grid;
 gap: 2px;
 grid-template-columns:repeat(3, 1fr);
-grid-template-rows: minmax(50px, 70px);
+grid-template-rows: minmax(50px, auto);
 padding: 5px;
 }
 .izq{
     align-self: center;
     justify-self: start;
+    margin: 10px 50px;
 }
 
 .cnt{
@@ -18,5 +19,6 @@ padding: 5px;
 
 .der{
     align-self: center;
-    justify-self: auto;
+    justify-self: center;
+    margin: 10px 50px;
 }
