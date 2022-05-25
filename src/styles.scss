@@ -44,12 +44,13 @@ $ter: #417D7A;
 $l1: #442c2e;
 
 *{
-    background-color: rgba( $base, 0.774);
+    //background-color: rgba( $base, 0.774);
   }
 
 body{
-    color: #fff;
-    font-family: 'Nunite Semibold';
+    color: rgb(32, 31, 31);
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif; 
     text-align: center;
 }
 
@@ -60,8 +61,7 @@ a{
     text-decoration: none;
     color: $l1;
 }
-html, body { height: 100%; }
-body { 
-  margin: 0;
-  font-family: Roboto, "Helvetica Neue", sans-serif; 
+html, body { 
+  height: 100%; 
 }
+

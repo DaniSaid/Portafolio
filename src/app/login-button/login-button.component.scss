@@ -1,7 +1,8 @@
 // paleta de colores
 $base:#F1E0AC;
 //letras
-$l1: #442c2e;
+$l1: #F1E0AC;
+$l2: #D74E09;
 
 .container{
   display: flex;
@@ -70,6 +71,7 @@ a{
   letter-spacing: 1px;
 
   rect {
+    stroke: $l2;
     stroke-width: 5;
     stroke-dasharray: 20, 100;
     stroke-dashoffset: 158%;

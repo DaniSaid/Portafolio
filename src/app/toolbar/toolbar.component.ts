@@ -6,9 +6,14 @@ import { Component, OnInit} from '@angular/core';
   styleUrls: ['./toolbar.component.scss']
 })
 export class ToolbarComponent implements OnInit {
+  
+  logo : string = " /assets/images/APLogo-darkmode.png";
+  icon : string = " /assets/images/b-adjust.svg"
 
-  constructor() { }
+  constructor() { 
 
+   }
+  
   ngOnInit(): void {
   }
 
