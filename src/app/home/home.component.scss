@@ -6,8 +6,8 @@
     bottom: 0;
   
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: minmax(50px, 80px);
+    grid-template-columns: repeat(4, 1fr );
+    grid-template-rows: minmax(50px, 60px);
     gap: 5px;
   
     margin: 0;
@@ -21,15 +21,15 @@
     background-position: bottom; 
     
     grid-template-areas: 
-    "navbar navbar navbar"
-      "izq main der"
-      "izq main der"
-      "izq main der"
-      "izq main der"
-      "izq main der"
-      "izq main der"
-      "izq main der"
-      "bttm bttm bttm"
+    "navbar navbar navbar navbar"
+      "izq main main der"
+      "izq main main der"
+      "izq main main der"
+      "izq main main der"
+      "izq main main der"
+      "izq main main der"
+      "izq main main der"
+      "bttm bttm bttm bttm"
       ;
   }
   .navbar{
@@ -47,3 +47,30 @@
   .bottom{
     grid-area: bttm;
   }
+
+
+  // estilo de contenedor de texto h1
+  .txt-box {
+    width: 100px;
+    height: 30px;
+
+    display: flex;
+    grid-row: 3/4;
+    grid-column: 2/3;
+
+    align-self: start;
+    align-items: center;
+    justify-self: start;
+    justify-content: center;
+
+
+    border-radius: 100px;
+    padding: 10px;
+    background-color: rgba(#EFEFEE,.53);
+
+    h1{
+      margin: 0;
+    }
+    
+  }
+ 
