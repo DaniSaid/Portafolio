@@ -6,7 +6,7 @@
     bottom: 0;
   
     display: grid;
-    grid-template-columns: repeat(4, 1fr );
+    grid-template-columns: repeat(8, minmax(60px, 125px));
     grid-template-rows: minmax(50px, 60px);
     gap: 5px;
   
@@ -14,32 +14,38 @@
     width: 100vw;
     height: 100vh;
 
-    background-image: url(bg-img/layered-waves2.svg);
+    background-image: url( /assets/images/layered-waves2.svg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
     background-position: bottom; 
     
     grid-template-areas: 
-    "navbar navbar navbar navbar"
-      "izq main main der"
-      "izq main main der"
-      "izq main main der"
-      "izq main main der"
-      "izq main main der"
-      "izq main main der"
-      "izq main main der"
-      "bttm bttm bttm bttm"
+    "navbar navbar navbar"
+      "izq main der"
+      "izq main der"
+      "izq main der"
+      "izq main der"
+      "izq main der"
+      "izq main der"
+      "izq main der"
+      "bttm bttm bttm"
       ;
   }
   .navbar{
     grid-area: navbar;
+    grid-column: 1/9;
+    grid-row: 1/2;
   }
   .izq{
     grid-area: izq;
+    grid-column: 1/2;
+    grid-row-start: 2;
   }
   .der{
     grid-area: der;
+    grid-column: 8/9;
+    grid-row-start: 2;
   }
   .main{
     grid-area: main;
@@ -47,30 +53,7 @@
   .bottom{
     grid-area: bttm;
   }
-
-
-  // estilo de contenedor de texto h1
-  .txt-box {
-    width: 100px;
-    height: 30px;
-
-    display: flex;
-    grid-row: 3/4;
-    grid-column: 2/3;
-
-    align-self: start;
-    align-items: center;
-    justify-self: start;
-    justify-content: center;
-
-
-    border-radius: 100px;
-    padding: 10px;
-    background-color: rgba(#EFEFEE,.53);
-
-    h1{
-      margin: 0;
-    }
-    
-  }
- 
+ .title1{
+  grid-row-start: 3;
+  grid-column-start: 3;
+ }

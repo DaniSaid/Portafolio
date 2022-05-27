@@ -62,4 +62,26 @@ html, body {
   height: 100%; 
 }
 
-//estilo del contenedor de texto
+  // estilo de contenedor de texto h1
+  .txt-box {
+    width: minmax(auto, 200px);
+    height: 60px;
+
+    display: flex;
+
+    align-self: start;
+    align-items: center;
+    justify-self: start;
+    justify-content: center;
+
+
+    border-radius: 25px;
+    padding: 10px;
+    background-color: rgba(#EFEFEE,.53);
+
+    h1{
+      margin: 0;
+      font-size: 52.11px;
+    }
+    
+  }
