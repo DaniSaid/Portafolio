@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ReturnButtonComponent } from './return-button.component';
+import { AboutButtonComponent } from './about-button.component';
 
 describe('ReturnButtonComponent', () => {
-  let component: ReturnButtonComponent;
-  let fixture: ComponentFixture<ReturnButtonComponent>;
+  let component: AboutButtonComponent;
+  let fixture: ComponentFixture<AboutButtonComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ ReturnButtonComponent ]
+      declarations: [ AboutButtonComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(ReturnButtonComponent);
+    fixture = TestBed.createComponent(AboutButtonComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

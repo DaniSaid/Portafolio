@@ -63,10 +63,7 @@ html, body {
 }
 
   // estilo de contenedor de texto h1
-  .txt-box {
-    width: minmax(auto, 200px);
-    height: 60px;
-
+  .box-style1 {
     display: flex;
 
     align-self: start;
@@ -76,12 +73,19 @@ html, body {
 
 
     border-radius: 25px;
-    padding: 10px;
+    padding: 10px 5px;
     background-color: rgba(#EFEFEE,.53);
 
     h1{
+      padding: 10px;
       margin: 0;
       font-size: 52.11px;
+    }
+
+    p{
+      padding: 10px;
+      margin: 0;
+      font-size: 22px;
     }
     
   }
