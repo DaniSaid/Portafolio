@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
+  //declarando url iconos para usar en el html
+
   constructor() { }
 
   ngOnInit(): void {
