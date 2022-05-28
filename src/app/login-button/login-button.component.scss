@@ -1,5 +1,5 @@
 // paleta de colores
-$base:#F1E0AC;
+$base:#ddd5be;
 //letras
 $l1: #F1E0AC;
 $l2: #D74E09;
@@ -77,4 +77,9 @@ a{
     stroke-dashoffset: 158%;
     transition: all 2.5s cubic-bezier(0.19, 1, 0.22, 1);
   }
+
+  text{
+    fill: $base;
+  }
+
 }

@@ -1,0 +1,52 @@
+$font:#F1E0AC;
+$bg:#3E3333;
+$highlight: #D74E09;
+
+.container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 18px;
+  }
+
+.bttn{
+    cursor: pointer;
+    background: $bg;
+    color: $font;
+    border: 0;
+    border-radius: 2px;
+    padding: 5px 10px;
+    font-size: 16px;
+
+    transition: color 1s;
+    -webkit-transition: color 1s;
+
+    position: relative;
+    z-index: 1;
+}
+
+//sombra
+.bttn::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+
+    position: absolute;  
+    z-index: -1; //asi la sombra queda dentro del botón y detras de las letras
+
+    transform-origin: left;
+    transform: scaleX(.01);
+    transition: transform 300ms ease-in;
+}
+.bttn:hover{
+    color: $highlight;
+}
+
+.bttn:hover::after{
+    border-radius: 5px;
+    transform:scaleX(1);
+}
