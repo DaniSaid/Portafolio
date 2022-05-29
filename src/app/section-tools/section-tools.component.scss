@@ -1,0 +1,7 @@
+.tools{    
+    display: grid;
+    gap: 5px;
+    grid-template-columns: repeat(8, minmax(60px, 120px));
+    grid-template-rows: 50px;
+    grid-row:auto;
+}

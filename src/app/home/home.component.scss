@@ -1,4 +1,4 @@
-#container{
+.container{
     position: absolute;
     top: 0;
     left: 0;
@@ -52,7 +52,7 @@
   }
 
 // posicionando contenido de presentacion
-  .main{
+  #main{
     grid-area: main;
     grid-column: 2/8;
 
@@ -98,14 +98,8 @@
 /*----------------------------------
 * contenido de Herramientas
 */
-.tools{
+#sectionTools{
     grid-column: 2/8;
-
-     display: grid;
-     gap: 5px;
-     grid-template-columns: repeat(8, minmax(60px, 120px));
-     grid-template-rows: 50px;
-     grid-row:auto;
 }
 
 .card {
