@@ -12,6 +12,7 @@ import { LoginComponent } from './login/login.component';
 import { Pagina404Component } from './pagina404/pagina404.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './material.module';
+import { SectionToolsComponent } from './section-tools/section-tools.component';
 
 @NgModule({
   declarations: [
@@ -22,6 +23,7 @@ import { MaterialModule } from './material.module';
     LoginButtonComponent,
     LoginComponent,
     Pagina404Component,
+    SectionToolsComponent,
   ],
   imports: [
     BrowserModule,
