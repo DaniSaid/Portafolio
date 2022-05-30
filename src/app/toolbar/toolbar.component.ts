@@ -7,8 +7,8 @@ import { Component, OnInit} from '@angular/core';
 })
 export class ToolbarComponent implements OnInit {
   
-  logo : string = " /assets/images/APLogo-darkmode.png";
-  icon : string = " /assets/images/b-adjust.svg"
+public  logo : string = " /assets/images/APLogo-darkmode.png";
+public  icon : string = " /assets/images/b-adjust.svg"
 
   constructor() { 
 

@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SectionToolsComponent implements OnInit {
 
+ public toolsList=['Angular','JavaScript','CSS'];
+
   constructor() { }
 
   ngOnInit(): void {

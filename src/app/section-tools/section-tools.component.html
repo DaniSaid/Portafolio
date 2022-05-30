@@ -3,32 +3,16 @@
       <h1>Herramientas</h1>
     </header>
       <!--icono 1-->
-      <div class="card ">
+      <div class="card" *ngFor="let tool of toolsList">
         <img src="#" alt="Avatar" style="width:100%">
         <div class="container">
-          <h4><b>Jane Doe</b></h4> 
-          <p>Interior Designer</p> 
-        </div>
-      </div>
-
-      <!--icono 2-->
-      <div class="card">
-        <img src="#" alt="Avatar" style="width:100%">
-        <div class="container">
-          <h4><b>Jane Doe</b></h4> 
-          <p>Interior Designer</p> 
-        </div>
-      </div>
-
-      <!--icono 3-->
-      <div class="card">
-        <img src="#" alt="Avatar" style="width:100%">
-        <div class="container">
-          <h4><b>Jane Doe</b></h4> 
+          <h4><b>{{tool}}</b></h4> 
           <p>Interior Designer</p> 
         </div>
       </div>
 
       <!--ngFor junto con lista de iconos serviria para reemplazar tanto html-->
+      <!--la lista tiene que ser de objetos
+      cada herramienta es un objeto que tiene id, nombre una url del logo-->
    
 </div>
