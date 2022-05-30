@@ -13,6 +13,8 @@ import { Pagina404Component } from './pagina404/pagina404.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './material.module';
 import { SectionToolsComponent } from './section-tools/section-tools.component';
+import { HttpClientModule } from '@angular/common/http';
+
 
 @NgModule({
   declarations: [
@@ -24,12 +26,14 @@ import { SectionToolsComponent } from './section-tools/section-tools.component';
     LoginComponent,
     Pagina404Component,
     SectionToolsComponent,
+    
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     MaterialModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
