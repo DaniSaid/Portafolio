@@ -1,0 +1,44 @@
+{
+    "name": "Daniela",
+    "img" : " /assets/images/user.png",
+    "ubication" : "Argentina",
+    "title": "Full Stack Jr.",
+    "about" : "Actualmente me encuentro en la busqueda de un trabajo que me permita obtener experiencia laboral dentro del rubro y mejorar mis habilidades de programación.",
+    "logoArg": " /assets/images/APLogo-darkmode.png",
+    "tools": [
+                { 
+                    "id" : "1",
+                    "logoName":"Angular",
+                    "icon": " /assets/images/logos/angular-logo.svg"
+                },
+
+                { 
+                    "id" : "2",
+                    "logoName":"Bootstrap",
+                    "icon": " /assets/images/logos/bootstrap-logo.svg"
+                },
+            
+                {
+                    "id": "3",
+                    "logoName": "JavaScript",
+                    "icon": " /assets/images/logos/javascript-logo.svg"
+                },
+
+                {
+                    "id":"4",
+                    "logoName":"CSS",
+                    "icon": " /assets/images/logos/css-logo.svg"
+                },
+                {
+                    "id":"5",
+                    "logoName":"TypeScript",
+                    "icon": " /assets/images/logos/typescript-logo.svg"
+                },
+                {
+                    "id":"6",
+                    "logoName":"Figma",
+                    "icon":" /assets/images/logos/figma-logo.svg"
+                }
+        ]
+    
+}

@@ -1,23 +1,24 @@
-<div id="container">
+<div class="container">
     <div class="navbar">
         <app-toolbar></app-toolbar>
     </div>
 
     <div class="izq">
-      <p>izq</p>
+      
     </div>
 
     <section id="main">
-      <div class="title1 section-style">
+      <div class="title section-style">
         <h1>Hola!</h1>
       </div>
       <div class="p1 section-style">
-        <p>Mi nombre es Daniela, vivo en Argentina pais donde naci, 
-            soy una desarrolladora Full Stack Jr.  autodidacta y fanatica del café.</p>
+        <p>Mi nombre es {{myData.name}}, vivo en {{myData.ubication}} pais donde naci, 
+            soy una desarrolladora {{myData.title}}  autodidacta y fanatica del café.</p>
       </div>
       <div class="p2 section-style">
-        <p>Actualmente me encuentro en la busqueda de un trabajo que me permita obtener
-          experiencia laboral dentro del rubro y mejorar mis habilidades de programacion.</p>
+        <p>
+          {{myData.about}}
+        </p>
       </div>
       <div id="aboutBttn">
         <about-button></about-button>
@@ -33,10 +34,7 @@
     </section>
   
     <div class="der">
-        <p>der</p>
-        <a href="javascript:history.back()">Return</a>
     </div>
-    <div class="bottom">
-      <p>4</p>
-    </div>
+    <footer class="foot">
+    </footer>
 </div>

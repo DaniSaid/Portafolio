@@ -1,26 +1,38 @@
-.tools{    
-    display: grid;
-    gap: 5px;
-    grid-template-columns: repeat(8, minmax(60px, 120px));
-    grid-template-rows: 50px;
-    grid-row:auto;
+.title{
+  width: 300px;
+  position: relative;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
 }
 
-.card {
+.cardsGroup {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  margin: 50px 10px;
+
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-auto-rows: auto;
+  grid-gap: 1rem;
+  text-align: center;
+  
+  }
+  mat-card-header{
+    justify-content: center;
+    padding-right: 30px;
+  }
+
+  mat-card{
+    background: none;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
     transition: 0.3s;
-    width: 100%;
+    width: 50%;
     border-radius: 5px;
+   
   }
-  
-  .card:hover {
+  mat-card:hover{
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-  }
-  
-  img {
-    border-radius: 5px 5px 0 0;
-  }
-  
-  .container {
-    padding: 2px 16px;
   }

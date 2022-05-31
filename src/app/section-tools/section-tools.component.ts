@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { PortfolioDataService } from 'src/app/services/portfolio-data.service'
 
 @Component({
   selector: 'app-section-tools',
@@ -7,11 +8,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SectionToolsComponent implements OnInit {
 
- public toolsList=['Angular','JavaScript','CSS'];
+ myData : any;
 
-  constructor() { }
+  constructor(private portfolioData:PortfolioDataService) { }
 
   ngOnInit(): void {
+  
+    this.portfolioData.getData().subscribe(data =>{
+      console.log(data);
+    
+    this.myData = data;
+    });
+
   }
 
 }
