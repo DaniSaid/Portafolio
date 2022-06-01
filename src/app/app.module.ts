@@ -14,6 +14,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './material.module';
 import { SectionToolsComponent } from './section-tools/section-tools.component';
 import { HttpClientModule } from '@angular/common/http';
+import { SectionContactComponent } from './section-contact/section-contact.component';
 
 
 @NgModule({
@@ -26,6 +27,7 @@ import { HttpClientModule } from '@angular/common/http';
     LoginComponent,
     Pagina404Component,
     SectionToolsComponent,
+    SectionContactComponent,
     
   ],
   imports: [
