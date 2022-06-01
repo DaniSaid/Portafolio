@@ -18,6 +18,8 @@
   grid-auto-rows: auto;
   grid-gap: 1rem;
   text-align: center;
+
+
   
   }
   mat-card-header{
@@ -29,8 +31,10 @@
     background: none;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
     transition: 0.3s;
-    width: 50%;
-    border-radius: 5px;
+    width: 40%;
+    border-radius: 30px;
+
+    background-color: rgba(#66665f,.53);
    
   }
   mat-card:hover{
