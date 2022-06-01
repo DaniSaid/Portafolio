@@ -6,39 +6,33 @@
     bottom: 0;
   
     display: grid;
-    grid-template-columns: repeat(8, minmax(60px, 125px));
-    grid-template-rows: minmax(50px, 60px);
+    grid-template-columns: repeat(8, minmax(60px, 123px));
+    grid-template-rows: minmax(50px, 100px);
     gap: 5px;
   
     margin: 0;
-    width: 100vw;
-    height: 200vh;
+    width: 98vw;
+    height: 300vh;
 
     background-image: url( /assets/images/layered-waves2.svg);
-    background-color: rgba(#EDE6DB, 1);
-    background-blend-mode: multiply;
     background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: scroll;
-    background-position: center bottom; 
+      background-size: cover;
+      background-position: bottom center, 50%, 50%;
+
     
     grid-template-areas: 
     "navbar navbar navbar"
       "izq main der"
-      "izq main der"
-      "izq main der"
-      "izq main der"
-      "izq main der"
-      "izq main der"
-      "izq main der"
-      "bttm bttm bttm"
+      "izq hr1 der"
+      "izq tools der"
+      "izq hr2 der"
+      "izq contact der"
       ;
   }
 //grid principal de pagina home
   .navbar{
     grid-area: navbar;
     grid-column: 1/9;
-    grid-row: 1/2;
   }
   .izq{
     grid-area: izq;
@@ -87,17 +81,27 @@
       
     }
 
-/*---------------------------------
-*posicion primer linea dvisioria
-*/
 #hr1{
+  grid-area: hr1;
+
   grid-column: 2/8;
   padding: 0;
 }
 
-/*----------------------------------
-* contenido de Herramientas
-*/
-#Tools{
+#tools{
+    grid-area: tools;
+
     grid-column: 2/8;
 }
+
+#hr2{
+  grid-area: hr2;
+  grid-column: 2/8;
+}
+
+#contact{
+  grid-area: contact;
+
+  grid-column: 2/8;
+}
+
