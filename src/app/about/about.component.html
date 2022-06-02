@@ -1,54 +1,18 @@
+<div class="container">
 
-<div>
-    <h1>Educación</h1>
-
-    <div class="cardsGroup">
-        <mat-card-actions> 
-                <mat-icon style="float:right;">edit</mat-icon>
-        </mat-card-actions>
-
-        <mat-card style="border: solid 2px;">
-        <img mat-card-image src="#" alt="icon ET N°21 DE 10">
-            <mat-card-header>
-            <mat-card-title> ET N°21 DE 10 </mat-card-title>
-            <mat-card-subtitle>"Fragata Escuela Libertad"</mat-card-subtitle>
-            </mat-card-header>
-            <mat-card-content>
-            <p>Título obtenido: "Técnico en Computación"</p>
-            </mat-card-content>    
-        </mat-card>
+    <div class="navbar">
+        <app-toolbar></app-toolbar>
     </div>
 
-</div>
-
-<div>
-    <h1>Experiencia</h1>
-
-    <div class="cardsGroup">
-        <mat-card-actions> 
-                <mat-icon style="float:right;">edit</mat-icon>
-        </mat-card-actions>
-
-        <mat-card style="border: solid 2px;">
-        <img mat-card-image src="#" alt="icon ET N°21 DE 10">
-            <mat-card-header>
-            <mat-card-title> Empresa </mat-card-title>
-            <mat-card-subtitle>"Mera Solutions"</mat-card-subtitle>
-            </mat-card-header>
-            <mat-card-content>
-                <p>puesto:<span>"atención al cliente"</span></p>
-                <p>descripción: <span>
-                    recibir llamadas por parte de los clientes y ofrecer soluciones
-                    a los problemas planteados de la forma mas eficiente posible
-                </span></p>
-            </mat-card-content> 
-        </mat-card>
+    <div id="education">
+        <app-section-education></app-section-education>
     </div>
 
-</div>
+    <div id="experience">
+        <app-section-experience></app-section-experience>
+    </div>
 
-<div>
-    <h1>Mis Proyectos</h1>
-    <p>me encanta aprender y probar cosas nuevas!</p>
-    <p>por aqui dejo algunos de mis proyectos y hobbies personales</p>
+    <div id="projects">
+        <app-section-projects></app-section-projects>
+    </div>
 </div>
