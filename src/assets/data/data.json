@@ -44,9 +44,54 @@
     "education":[{
                     "name":"Fragata Escuela Libertad",
                     "title":"Técnico en Computación",
-                    "level":"nivel secundario",
+                    "level":"Nivel secundario",
                     "dateInit":"2008",
                     "dateEnd":"2014",
                     "icon":" /assets/images/logos/ETN21DE10-logo.png"
-                }]
+                }],
+
+    "experience":[
+        {
+            "name":"Mera Solutions",
+            "position":"Atención al cliente",
+            "workingHours":"6",
+            "description":"Recibir llamadas por parte de los clientes y ofrecer soluciones a los problemas planteados de la forma más eficiente posible",
+            "dateInit":"2016",
+            "dateEnd":"2017"
+        },
+        {
+            "name":"La Tienda Natural",
+            "position":"Asistente de personal",
+            "workingHours":"8",
+            "description":"Tareas de mantenimiento, atención al cliente, caja, reposición de productos y ayudante de cocina",
+            "dateInit":"2018",
+            "dateEnd":"2021"
+        },
+        {
+            "name":"Kaizenq",
+            "position":"Atención al cliente",
+            "workingHours":"6",
+            "description":"Hacer seguimiento del trabajo realizado por distintos talleres automotor, mediante la realizacion de encuestas a los clientes",
+            "dateInit":"2021",
+            "dateEnd":"2022"
+        }
+    ],
+    "projects":[
+        {
+            "name":"Carpintería",
+            "img":"#"
+        },
+        {
+            "name":"Construcción",
+            "img":"#"
+        },
+        {
+            "name":"Armado de PC",
+            "img":"#"
+        },
+        {
+            "name":"Mi Portafolio",
+            "img":"#"
+        }
+    ]
 }
