@@ -16,6 +16,9 @@ import { SectionToolsComponent } from './section-tools/section-tools.component';
 import { HttpClientModule } from '@angular/common/http';
 import { SectionContactComponent } from './section-contact/section-contact.component';
 import { AboutComponent } from './about/about.component';
+import { SectionEducationComponent } from './section-education/section-education.component';
+import { SectionExperienceComponent } from './section-experience/section-experience.component';
+import { SectionProjectsComponent } from './section-projects/section-projects.component';
 
 
 @NgModule({
@@ -30,6 +33,9 @@ import { AboutComponent } from './about/about.component';
     SectionToolsComponent,
     SectionContactComponent,
     AboutComponent,
+    SectionEducationComponent,
+    SectionExperienceComponent,
+    SectionProjectsComponent,
     
   ],
   imports: [
