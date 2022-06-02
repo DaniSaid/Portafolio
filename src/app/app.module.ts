@@ -15,6 +15,7 @@ import { MaterialModule } from './material.module';
 import { SectionToolsComponent } from './section-tools/section-tools.component';
 import { HttpClientModule } from '@angular/common/http';
 import { SectionContactComponent } from './section-contact/section-contact.component';
+import { AboutComponent } from './about/about.component';
 
 
 @NgModule({
@@ -28,6 +29,7 @@ import { SectionContactComponent } from './section-contact/section-contact.compo
     Pagina404Component,
     SectionToolsComponent,
     SectionContactComponent,
+    AboutComponent,
     
   ],
   imports: [

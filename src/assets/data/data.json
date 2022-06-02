@@ -39,6 +39,14 @@
                     "logoName":"Figma",
                     "icon":" /assets/images/logos/figma-logo.svg"
                 }
-        ]
-    
+        ],
+
+    "education":[{
+                    "name":"Fragata Escuela Libertad",
+                    "title":"Técnico en Computación",
+                    "level":"nivel secundario",
+                    "dateInit":"2008",
+                    "dateEnd":"2014",
+                    "icon":" /assets/images/logos/ETN21DE10-logo.png"
+                }]
 }
