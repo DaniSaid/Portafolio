@@ -73,10 +73,14 @@ a{
     justify-self: start;
     justify-content: center;
 
-
     border-radius: 25px;
     padding: 10px 5px;
     background-color: rgba(#EFEFEE,.53);
+
+    box-shadow: 0 1px 1px rgba(0,0,0,0.11), 
+              0 2px 2px rgba(0,0,0,0.11), 
+              0 4px 4px rgba(0,0,0,0.11), 
+              0 6px 8px rgba(0,0,0,0.11);
 
     h1{
       padding: 10px;
@@ -122,4 +126,58 @@ p{
   padding: 10px;
   margin: 0;
   font-size: 22px;
+}
+
+//animacion de div
+@keyframes drop-in{
+  from{
+    transform: translate(-20%, -50%);
+    opacity: 0.65;
+  }
+  to{
+    transform: translate(0%);
+  }
+}
+
+@keyframes slide-in-left {
+  from {
+    transform: translate( 30% ,20%);
+    opacity: 0.65;
+  }
+  to {
+    transform: translate(0%);
+  }
+}
+
+@keyframes slide-in-right {
+  from {
+    transform: translate( -30% ,20%);
+    opacity: 0.65;
+  }
+  to {
+    transform: translate(0%);
+  }
+}
+
+//transicion usada en titulos y parrafos 
+.box-animation{
+  transition: transform 250ms;
+  will-change: transform;
+}
+
+.box-animation:hover{
+  transform: translate(2px, -10px);
+  box-shadow: 0 1px 1px rgba(0,0,0,0.25), 
+    0 2px 2px rgba(0,0,0,0.20), 
+    0 4px 4px rgba(0,0,0,0.15), 
+    0 8px 8px rgba(0,0,0,0.10),
+    0 16px 16px rgba(0,0,0,0.05);
+}
+
+
+// por si el sist operativo del usuario tiene activado el "reduce notion"
+@media (prefers-reduced-motion: reduce) {
+  .box-animation {
+    transition: none;
+  }
 }

@@ -28,46 +28,28 @@
     }
   }
 
-
-  .container{
-        width: 100%;
-
-        border: solid 1px;
-        border-radius: 5px;
-        background-color: rgba(85, 81, 81, .5);
-        box-shadow:0 0 15px 4px rgba(0,0,0,0.5);
-  }
-
-  input[type=text] {
-        padding: 10px;
-        margin: 10px 0;
-  }
-
-  .input-style {
-        width: inherit;
-        border: 2px solid #eee;
-        border-radius: 2px;
-        box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
- }
-
-//-----------------
-
- .example-form {
+ .form-box {
     min-width: 150px;
     max-width: 300px;
     width: 100%;
   }
   
-  .example-full-width {
+  .field-box {
     width: 100%;
   }
 
   input[type=text], textarea {
+      background-color:rgba(#eeeee1,.7);
     padding: 10px;
     margin: 10px 50px;
     width: 100%;
     border: 0;
-    box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+    box-shadow: 0 1px 2px rgba(0,0,0,0.5), 
+    0 2px 4px rgba(0,0,0,0.5), 
+    0 4px 8px rgba(0,0,0,0.07), 
+    0 8px 16px rgba(0,0,0,0.07),
+    0 16px 32px rgba(0,0,0,0.07), 
+    0 32px 64px rgba(0,0,0,0.07);
 }
 
 
