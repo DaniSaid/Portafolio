@@ -9,10 +9,13 @@ import { PortfolioDataService } from 'src/app/services/portfolio-data.service'
 export class HomeComponent implements OnInit {
 
   myData : any;
+  sentence : string = "Buenos Aires, Argentina";
 
   constructor(private portfolioData:PortfolioDataService) {
 
-    
+    let result = this.sentence;
+  
+    console.log(result.length)
 
    }
 
