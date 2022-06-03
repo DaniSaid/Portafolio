@@ -4,14 +4,15 @@
                 <mat-icon style="float:right;">edit</mat-icon>
         </mat-card-actions>
 
-        <mat-card style="border: solid 2px;">
-        <img mat-card-image src="#" alt="icon ET N°21 DE 10">
+        <mat-card style="border: solid 2px;" *ngFor="let edu of myData.education">
+        <img mat-card-image [src]="edu.logo" alt="icon ET N°21 DE 10">
             <mat-card-header>
-            <mat-card-title> ET N°21 DE 10 </mat-card-title>
-            <mat-card-subtitle>"Fragata Escuela Libertad"</mat-card-subtitle>
+            <mat-card-title> {{edu.name}} </mat-card-title>
+            <mat-card-subtitle>{{edu.subName}}</mat-card-subtitle>
             </mat-card-header>
             <mat-card-content>
-            <p>Título obtenido: "Técnico en Computación"</p>
+            <p>Título obtenido: <span>{{edu.title}}</span></p>
+            <p>{{edu.dateInit}} - {{edu.dateEnd}} </p>
             </mat-card-content>    
         </mat-card>
 
