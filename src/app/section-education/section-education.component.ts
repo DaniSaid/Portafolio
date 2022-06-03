@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { PortfolioDataService } from 'src/app/services/portfolio-data.service'
+
 
 @Component({
   selector: 'app-section-education',
@@ -7,9 +9,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SectionEducationComponent implements OnInit {
 
-  constructor() { }
+  myData : any;
+
+  constructor(private porfolioData:PortfolioDataService) { }
 
   ngOnInit(): void {
+    this.porfolioData.getData().subscribe(data=>{
+      this.myData = data;
+    })
   }
 
 }
