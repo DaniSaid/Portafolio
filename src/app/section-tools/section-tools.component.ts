@@ -15,7 +15,7 @@ export class SectionToolsComponent implements OnInit {
   ngOnInit(): void {
   
     this.portfolioData.getData().subscribe(data =>{
-      console.log(data);
+      console.log(this.myData);
     
     this.myData = data;
     });

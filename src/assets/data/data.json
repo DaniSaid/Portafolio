@@ -1,5 +1,6 @@
 {
     "name": "Daniela",
+    "surName":"Gavilán",
     "img" : " /assets/images/user.png",
     "ubication" : "Argentina",
     "title": "Full Stack Jr.",
@@ -9,45 +10,46 @@
                 { 
                     "id" : "1",
                     "logoName":"Angular",
-                    "icon": " /assets/images/logos/angular-logo.svg"
+                    "logo": " /assets/images/logos/angular-logo.svg"
                 },
 
                 { 
                     "id" : "2",
                     "logoName":"Bootstrap",
-                    "icon": " /assets/images/logos/bootstrap-logo.svg"
+                    "logo": " /assets/images/logos/bootstrap-logo.svg"
                 },
             
                 {
                     "id": "3",
                     "logoName": "JavaScript",
-                    "icon": " /assets/images/logos/javascript-logo.svg"
+                    "logo": " /assets/images/logos/javascript-logo.svg"
                 },
 
                 {
                     "id":"4",
                     "logoName":"CSS",
-                    "icon": " /assets/images/logos/css-logo.svg"
+                    "logo": " /assets/images/logos/css-logo.svg"
                 },
                 {
                     "id":"5",
                     "logoName":"TypeScript",
-                    "icon": " /assets/images/logos/typescript-logo.svg"
+                    "logo": " /assets/images/logos/typescript-logo.svg"
                 },
                 {
                     "id":"6",
                     "logoName":"Figma",
-                    "icon":" /assets/images/logos/figma-logo.svg"
+                    "logo":" /assets/images/logos/figma-logo.svg"
                 }
         ],
 
     "education":[{
-                    "name":"Fragata Escuela Libertad",
-                    "title":"Técnico en Computación",
-                    "level":"Nivel secundario",
-                    "dateInit":"2008",
-                    "dateEnd":"2014",
-                    "icon":" /assets/images/logos/ETN21DE10-logo.png"
+        "name":"ET N°21 DE 10",
+        "subName":"Fragata Escuela Libertad",
+        "title":"Técnico en Computación",
+        "level":"Nivel secundario",
+        "dateInit":"2008",
+        "dateEnd":"2014",
+        "logo":" /assets/images/logos/ETN21DE10-logo.png"
                 }],
 
     "experience":[
@@ -55,6 +57,7 @@
             "name":"Mera Solutions",
             "position":"Atención al cliente",
             "workingHours":"6",
+            "workType":"part-time",
             "description":"Recibir llamadas por parte de los clientes y ofrecer soluciones a los problemas planteados de la forma más eficiente posible",
             "dateInit":"2016",
             "dateEnd":"2017"
@@ -63,6 +66,7 @@
             "name":"La Tienda Natural",
             "position":"Asistente de personal",
             "workingHours":"8",
+            "workType":"full time",
             "description":"Tareas de mantenimiento, atención al cliente, caja, reposición de productos y ayudante de cocina",
             "dateInit":"2018",
             "dateEnd":"2021"
@@ -71,6 +75,7 @@
             "name":"Kaizenq",
             "position":"Atención al cliente",
             "workingHours":"6",
+            "workType":"part-time",
             "description":"Hacer seguimiento del trabajo realizado por distintos talleres automotor, mediante la realizacion de encuestas a los clientes",
             "dateInit":"2021",
             "dateEnd":"2022"
