@@ -19,7 +19,7 @@ import { AboutComponent } from './about/about.component';
 import { SectionEducationComponent } from './section-education/section-education.component';
 import { SectionExperienceComponent } from './section-experience/section-experience.component';
 import { SectionProjectsComponent } from './section-projects/section-projects.component';
-
+import { NgsRevealModule } from 'ngx-scrollreveal';
 
 @NgModule({
   declarations: [
@@ -44,6 +44,7 @@ import { SectionProjectsComponent } from './section-projects/section-projects.co
     BrowserAnimationsModule,
     MaterialModule,
     HttpClientModule,
+    NgsRevealModule
   ],
   providers: [],
   bootstrap: [AppComponent]
