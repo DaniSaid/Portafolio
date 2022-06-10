@@ -6,7 +6,8 @@
         <div id="iconLD"><!--icono de light/dark mode-->
             <img [src]="icon" alt="icono de modo">
         </div>
-        <div id="switch">
+        <div id="switch" *ngIf="router.url === '/About'">
+            <a href="/"><mat-icon>home</mat-icon></a>
         </div>
         <div>
             <login-button></login-button>

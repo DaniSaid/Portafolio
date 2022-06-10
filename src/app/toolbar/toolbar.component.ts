@@ -1,5 +1,6 @@
 import { Component, OnInit} from '@angular/core';
 import { PortfolioDataService } from 'src/app/services/portfolio-data.service'
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-toolbar',
@@ -13,7 +14,7 @@ public  icon : string = " /assets/images/b-adjust.svg"
 
 portfolio : any;
 
-  constructor(private portfolioData:PortfolioDataService){
+  constructor(private portfolioData:PortfolioDataService, public router: Router){
 
   }
   

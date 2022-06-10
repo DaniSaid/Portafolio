@@ -37,12 +37,19 @@ background-color: black;
 #iconLD{
     color: black;
     justify-self: end;
+    align-self: center;
     padding: 5px;
 }
 #switch{
-    color: black;
-    justify-self: start;
+    color: #F1E0AC;
+    justify-self: center;
+
+    mat-icon{
+        font-size: 30px;
+    }
 }
+
+
 
 #buttonL{
     justify-self: start;
