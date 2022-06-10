@@ -1,0 +1,53 @@
+.container{
+    position: absolute;
+    top: 0;
+    left:0;
+    right: 0;
+    bottom: 0;
+
+    display: grid;
+    grid-template-columns: repeat(autofill, minmax(60px, 123px));
+    grid-template-rows: minmax(50px, 120px);
+    gap: 5px;
+
+    margin: 0;
+    width: 100%;
+    height: 100%;
+
+    background-color: #EDE6DB;
+
+    grid-template-areas:
+    "navbar navbar navbar"
+    "education education education"
+    "experience experience experience"
+    ;
+}
+
+.navbar{
+    grid-area: navbar;
+}
+
+#section-education{
+    grid-area: education;
+}
+#section-experience{
+    grid-area: experience;
+}
+
+#section-projects{
+    grid-area: project;
+}
+.footer{
+    grid-area: footer;
+}
+
+.container div{
+    background: #ffffff;
+  }
+  .container div:nth-child(even){
+    background: #777;
+  }
+  .container #section-education{
+      background: #272541;
+      
+  }

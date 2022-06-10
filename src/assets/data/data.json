@@ -1,7 +1,7 @@
 {
     "name": "Daniela",
     "surName":"Gavilán",
-    "img" : " /assets/images/user.png",
+    "imgUser" : " /assets/images/user.png",
     "ubication" : "Argentina",
     "title": "Full Stack Jr.",
     "about" : "Actualmente me encuentro en la busqueda de un trabajo que me permita obtener experiencia laboral dentro del rubro y mejorar mis habilidades de programación.",
@@ -51,7 +51,6 @@
         "dateEnd":"2014",
         "logo":" /assets/images/logos/ETN21DE10-logo.png"
                 }],
-
     "experience":[
         {
             "name":"Mera Solutions",
