@@ -16,7 +16,6 @@ export class HomeComponent implements OnInit {
     let result = this.sentence;
   
     console.log(result.length)
-
    }
 
   ngOnInit(): void {
