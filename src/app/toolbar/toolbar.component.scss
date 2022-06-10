@@ -1,3 +1,9 @@
+$base: #EDE6DB;
+$DarkContrast: #442c2e;
+$highlight: #D74E09;
+$secondHighlight:#F1E0AC;
+$darkHighlight: #d4662ecc;
+
 
 #container{
 display: grid;
@@ -39,9 +45,14 @@ background-color: black;
     justify-self: end;
     padding: 5px;
 }
-#switch{
-    color: black;
+#homeLogo{
+    align-self: center;
     justify-self: start;
+}
+
+mat-icon{
+    color: $secondHighlight;
+    font-size: 30px;
 }
 
 #buttonL{
