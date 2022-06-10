@@ -1,0 +1,47 @@
+.container{
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows:auto;
+    grid-template-areas: 
+    "title title"
+    "izq der"
+    ;
+}
+
+.title{
+    grid-area: title;
+    justify-self:center;
+    margin:0;
+}
+.izq{
+    grid-area: izq;
+    margin: 0 10px;
+    justify-self: center;
+    align-self:center;
+}
+.der{
+    grid-area: der;
+}
+
+.section-style{
+    width: 100%;
+    border-radius: 0;
+    padding: 0;
+    margin: 0;
+    background: black;
+    color: #fff;
+}
+
+mat-card{
+    width: 100%;
+    height:100%;
+    border: solid 2px;
+    justify-content: center;
+    padding: 5px;
+
+    img{
+        object-fit: contain; /*this makes the image in src fit to the size specified below*/
+        width: 70px; /* Here you can use wherever you want to specify the width and also the height of the <img>*/
+        height: 70px;
+    }
+}

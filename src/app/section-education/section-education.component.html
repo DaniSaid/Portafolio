@@ -1,19 +1,23 @@
-<h1>Educación</h1>
+<div class="container">
+<div class="title section-style">
+    <h1>Educación</h1>
+</div>
+<div class="izq">
     <div class="cardsGroup">
-        <mat-card-actions> 
-                <mat-icon style="float:right;">edit</mat-icon>
-        </mat-card-actions>
-
-        <mat-card style="border: solid 2px;" *ngFor="let edu of myData.education">
-        <img mat-card-image [src]="edu.logo" alt="icon ET N°21 DE 10">
-            <mat-card-header>
-            <mat-card-title> {{edu.name}} </mat-card-title>
-            <mat-card-subtitle>{{edu.subName}}</mat-card-subtitle>
-            </mat-card-header>
-            <mat-card-content>
-            <p>Título obtenido: <span>{{edu.title}}</span></p>
-            <p>{{edu.dateInit}} - {{edu.dateEnd}} </p>
-            </mat-card-content>    
+        <mat-card *ngFor="let edu of myData.education">
+                <mat-card-header>
+                    <img mat-card-avatar [src]="edu.logo" alt="icon ET N°21 DE 10">
+                    <mat-card-title> {{edu.name}} </mat-card-title>
+                    <mat-card-subtitle>{{edu.subName}}</mat-card-subtitle>
+                </mat-card-header>
+                <mat-card-content>
+                    <p>Título obtenido: <span>{{edu.title}}</span></p>
+                    <p>{{edu.dateInit}} - {{edu.dateEnd}} </p>
+                </mat-card-content>    
         </mat-card>
-
+    </div>
+</div>
+<div class="der">
+    <img [src]="image" alt="foto de libros" width="100%">
+</div>
 </div>
