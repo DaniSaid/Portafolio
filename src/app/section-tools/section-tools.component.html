@@ -1,6 +1,6 @@
 <div class="tools">
   
-  <div class="title section-style box-animation">
+  <div class="title section-style animated">
     <header>
       <h2>Herramientas</h2>
     </header>
@@ -8,7 +8,7 @@
 <!--usar ngFor junto con lista de herramientas,
     la lista tiene que ser de objetos
     cada herramienta es un objeto que tiene id, nombre y una url del logo-->
-  <div class="cardsGroup">
+  <div class="cardsGroup animated">
     <mat-card  *ngFor="let tool of myData.tools">
       <mat-card-header>
           <img mat-card-sm-image [src]="tool.logo" alt="logo">
