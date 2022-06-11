@@ -37,18 +37,17 @@ background-color: black;
     margin: 0;
     width: 100%;
     height: 100%;
+
+    grid-template-areas:
+    "homeLogo homeLogo buttonLogin"
+    ;
 }
 
 //elementos dentro del nav
-#iconLD{
-    color: black;
-    justify-self: end;
-    align-self: center;
-    padding: 5px;
-}
 #homeLogo{
     align-self: center;
-    justify-self: center;
+    justify-self: end;
+    grid-area: homeLogo;
 }
 
 mat-icon{
@@ -60,11 +59,10 @@ mat-icon{
     }
 }
 
-
-
 #buttonL{
-    justify-self: start;
+    justify-self: center;
     align-self: center;
+    grid-area: buttonLogin;
 }
 
 img{
