@@ -34,7 +34,7 @@ $Portafolio-theme: mat.define-light-theme((
 @include mat.all-component-themes($Portafolio-theme);
 
 /* You can add global styles to this file, and also import other style files */
-/* paleta de colores*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;1,300&display=swap');
 
 $base: #EDE6DB;
 $DarkContrast: #442c2e;
@@ -47,11 +47,12 @@ html{
 }
 
 body{
-    height: 100%;
-    color: rgb(32, 31, 31);
-    margin: 0;
-    font-family: Roboto, "Helvetica Neue", sans-serif; 
-    text-align: center;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+}
+ul, li{
+  padding:0;
+  list-style-type: none;
 }
 
 p{ 
@@ -61,6 +62,12 @@ p{
 a{
     text-decoration: none;
     color: $DarkContrast;
+}
+//layout principal de la página
+.grid{
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 30px;
 }
 
 

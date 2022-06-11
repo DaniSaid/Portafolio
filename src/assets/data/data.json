@@ -2,9 +2,10 @@
     "name": "Daniela",
     "surName":"Gavilán",
     "imgUser" : " /assets/images/user.png",
-    "ubication" : "Bs. As. Argentina",
+    "province" : "Buenos Aires",
+    "country" : "Argentina",
     "title": "Full Stack Jr.",
-    "about" : "Actualmente me encuentro en la busqueda de un trabajo que me permita obtener experiencia laboral dentro del rubro y mejorar mis habilidades de programación.",
+    "about" : "Actualmente, me encuentro en búsqueda de un trabajo que me permita mejorar mis habilidades dentro del campo de programación.",
     "logoArg": " /assets/images/APLogo-darkmode.png",
     "tools": [
                 { 
