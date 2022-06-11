@@ -8,6 +8,7 @@ import { PortfolioDataService } from 'src/app/services/portfolio-data.service'
 })
 export class SectionExperienceComponent implements OnInit {
 
+public image : string = " /assets/images/work-desk.jpg";
 myData : any;
 
   constructor(private portfolioData:PortfolioDataService) { }

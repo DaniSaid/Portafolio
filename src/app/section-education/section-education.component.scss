@@ -17,10 +17,19 @@
     grid-area: izq;
     margin: 0 10px;
     justify-self: center;
-    align-self:center;
+    align-self: center;
 }
 .der{
     grid-area: der;
+    justify-self: center;
+    align-self: center;
+
+    img{
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+    }
 }
 
 .section-style{
@@ -38,6 +47,7 @@ mat-card{
     border: solid 2px;
     justify-content: center;
     padding: 5px;
+    background: #EDE6DB;
 
     img{
         object-fit: contain; /*this makes the image in src fit to the size specified below*/

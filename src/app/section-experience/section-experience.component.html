@@ -3,23 +3,26 @@
         <h1>Experiencia</h1>
     </div>
 
-    <div class="cardsGroup">
-        <mat-card-actions> 
-                <mat-icon style="float:right;">edit</mat-icon>
-        </mat-card-actions>
+    <div class="right">
+        <div class="cardsGroup">
 
-        <mat-card style="border: solid 2px;" *ngFor="let exp of myData.experience">
-        <img mat-card-image src="#" alt="icon ET N°21 DE 10">
-            <mat-card-header>
-            <mat-card-title> {{exp.name}} </mat-card-title>
-            <mat-card-subtitle>trabajo {{exp.workType}} de {{exp.workingHours}}hs diarias</mat-card-subtitle>
-            </mat-card-header>
-            <mat-card-content>
-                <p>Puesto: <span>{{exp.position}}</span></p>
-                <p>Descripción: <span>
+            <mat-card *ngFor="let exp of myData.experience">
+                <img mat-card-image src="#" alt="icon ET N°21 DE 10">
+                <mat-card-header>
+                    <mat-card-title>{{exp.name}}</mat-card-title>
+                    <mat-card-subtitle>trabajo {{exp.workType}} de {{exp.workingHours}}hs diarias</mat-card-subtitle>
+                </mat-card-header>
+                <mat-card-content>
+                    <p>Puesto: <span>{{exp.position}}</span></p>
+                    <p>Descripción: <span>
                    {{exp.description}}
-                </span></p>
-            </mat-card-content> 
-        </mat-card>
+                    </span></p>
+                </mat-card-content> 
+            </mat-card>
+        </div>
     </div>
+    <div class="left">
+        <img [src]="image" alt="foto de libros" width="100%" height="100%">
+    </div>
+
 </div>
