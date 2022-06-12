@@ -9,10 +9,8 @@ import { Router } from '@angular/router';
 })
 
 export class ToolbarComponent implements OnInit {
-  
-public  icon : string = " /assets/images/b-adjust.svg"
 
-portfolio : any;
+  portfolio : any;
 
   constructor(private portfolioData:PortfolioDataService, public router: Router){
 
@@ -20,9 +18,9 @@ portfolio : any;
   
   ngOnInit(): void {
   
+    //service trae los datos del .json
     this.portfolioData.getData().subscribe(data =>{
       console.log(data);
-    
     this.portfolio = data;
 
     });

@@ -37,31 +37,32 @@ $Portafolio-theme: mat.define-light-theme((
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;1,300&display=swap');
 
 $base: #EDE6DB;
-$DarkContrast: #442c2e;
+$darkContrast: #442c2e;
 $highlight: #D74E09;
 $secondHighlight:#F1E0AC;
 $darkHighlight: #d4662ecc;
 
-html{
-  height: 100%;
-}
-
 body{
   margin: 0;
+  background: $base;
   font-family: 'Poppins', sans-serif;
 }
 ul, li{
   padding:0;
   list-style-type: none;
 }
+main{
+  padding: 100px 40px 40px;
+  color: $darkContrast;
+}
 
 p{ 
-    color: $DarkContrast;
+    color: $darkContrast;
 }
 
 a{
     text-decoration: none;
-    color: $DarkContrast;
+    color: $darkContrast;
 }
 //layout principal de la página
 .grid{
@@ -124,12 +125,12 @@ hr {
     box-sizing: border-box;
     height: 2px;
     
-    color: $DarkContrast;
+    color: $darkContrast;
     background-image: linear-gradient(
     90deg,
-    rgba($DarkContrast, 0),
-    rgba($DarkContrast, 1) 50%,
-    rgba($DarkContrast, 0) 100%);
+    rgba($darkContrast, 0),
+    rgba($darkContrast, 1) 50%,
+    rgba($darkContrast, 0) 100%);
 
 
 }
