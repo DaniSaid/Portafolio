@@ -12,58 +12,67 @@ header{
     padding: 10px 20px;
     box-sizing: border-box;/*hace que el padding forme parte del width*/
     color: #eee;
+    max-height: 50px;
+    align-content: center;
   }
-  
-  .burger{
-    display: block;
-    font-size: 1.2rem;
-    cursor: pointer;
-    z-index: 1;
-  }
-  .burger span{
-    display: block;
-    width: 30px;
-    height: 2px;
-    background: #eee;
-    margin-bottom: 6px;
-    transition: all 400ms ease-in;
-  }
-  
-  nav{
-  display: none;
-  }
-  nav a{
-    transition: all 400ms ease-in;
-    color: #eee;
-    display: block;
-    margin-bottom: 20px;
-    font-size: 5rem;
-  }
+.buttonGroup{
+  display: flex; 
+  justify-content: space-between;
+  gap: 40px;
+}
+img{
+  width: 20%;
+}
+.burger{
+  display: block;
+  font-size: 1.2rem;
+  cursor: pointer;
+  margin-left: 75px;
+  z-index: 1;
+}
+.burger span{
+  display: block;
+  width: 30px;
+  height: 2px;
+  background: #eee;
+  margin-bottom: 6px;
+  transition: all 400ms ease-in;
+}
+nav a{
+  transition: all 400ms ease-in;
+  color: #eee;
+  display: block;
+  margin-bottom: 20px;
+  font-size: 5rem;
+}
   
   /* open state */
-  nav.open{
-    display: flex;
-    justify-content: space-around;
-    align-content: space-around;
-    background: rgba(51, 51, 51, 0.911);
-    padding: 20px;
-    padding-top: 80px;
-    width: 100%;
-    height: 100%;
-    box-sizing: border-box;
-    position: absolute;
-    top: 0; /*ignora otros componentes y empieza desde la parte superior de la página*/
-    right: 0;
-  }
+nav{
+  display: flex;
+  justify-content: space-around;
+  align-content: space-around;
+  background: rgba(51, 51, 51, 0.911);
+  padding: 20px;
+  padding-top: 80px;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  position: absolute;
+  top: 0; /*ignora otros componentes y empieza desde la parte superior de la página*/
+  right: 0;
+}
+ul li{
+  padding: 0 0 95px;
+}
   
-  .burger.open span:first-child{
-    transform: rotate(45deg) translate(5px, 6px);
-  }
+.burger.open span:first-child{
+  transform: rotate(45deg) translate(5px, 6px);
+}
   
-  .burger.open span:nth-child(2){
-    opacity: 0;
-    width: 0;
-  }
-  .burger.open span:nth-child(3){
-    transform: rotate(-45deg) translate(5px, -6px);
-  }
+.burger.open span:nth-child(2){
+  opacity: 0;
+  width: 0;
+}
+.burger.open span:nth-child(3){
+  transform: rotate(-45deg) translate(5px, -6px);
+}
