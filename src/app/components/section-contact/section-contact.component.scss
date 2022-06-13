@@ -27,6 +27,17 @@
     width: 100%;
 }
 
+.mail-hover{
+    cursor: pointer;
+  will-change: transform;
+  transition: color 450ms ease-in;
+
+  &:hover{
+    transition: transform 150ms;
+    color: rgb(175, 80, 16);
+}
+}
+
 input[type=text], textarea {
     background-color:rgba(#eeeee1,.7);
     padding: 10px;
