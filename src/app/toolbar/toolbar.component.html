@@ -1,17 +1,19 @@
 <div class="menu">
     <header>
+      <figure>
         <img [src]="portfolio.logoArg" alt="APLogo">
+      </figure>
         <div class="buttonGroup">
           <login-button></login-button>
-          <div class="burger" (click)="toggleMenu()">
-              <span></span>
-              <span></span>
-              <span></span>
+          <div class="burger" (click)="toggleMenu()" >
+              <span [@toogleSpan]="menuState"></span>
+              <span [@toogleSpan2]="menuState"></span>
+              <span [@toogleSpan3]="menuState"></span>
           </div>
         </div>
     </header>
     
-    <nav [@slideInOut]="menuState">
+    <nav [@slideInOut]="navState">
       <ul>
         <li><a href="/">Home</a></li>
         <li><a href="/About">About</a></li>
