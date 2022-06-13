@@ -17,8 +17,8 @@ import { Router } from '@angular/router';
       state('out', style({
         transform: 'translate3d(100%, 0, 0)'
       })),
-      transition('in => out', animate('400ms ease-in-out')),
-      transition('out => in', animate('400ms ease-in-out'))
+      transition('in => out', animate('800ms ease-in-out')),
+      transition('out => in', animate('800ms ease-in-out'))
     ]),
     ///menu
     trigger('toogleSpan',[

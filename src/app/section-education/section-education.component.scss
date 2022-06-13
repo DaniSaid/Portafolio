@@ -1,7 +1,9 @@
 .container{
     display:grid;
+    background:  #142246;
     grid-template-columns: repeat(2, 1fr);
     grid-auto-rows:auto;
+    margin-top: 80px;
     grid-template-areas: 
     "title title"
     "izq der"

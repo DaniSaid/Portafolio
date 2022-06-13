@@ -21,6 +21,7 @@ import { SectionExperienceComponent } from './section-experience/section-experie
 import { SectionProjectsComponent } from './section-projects/section-projects.component';
 import { NgsRevealModule } from 'ngx-scrollreveal';
 import { FooterComponent } from './footer/footer.component';
+import { SectionMainComponent } from './section-main/section-main.component';
 
 @NgModule({
   declarations: [
@@ -38,6 +39,7 @@ import { FooterComponent } from './footer/footer.component';
     SectionExperienceComponent,
     SectionProjectsComponent,
     FooterComponent,
+    SectionMainComponent,
     
   ],
   imports: [

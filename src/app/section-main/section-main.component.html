@@ -1,0 +1,15 @@
+<main class="grid" [ngsRevealSet]="{ reset: true}" [ngsInterval]="400" [ngsSelector]="'.animated'">
+    <div class="title section-style on-hover animated">
+        <h1>Hola!</h1>
+    </div>
+    <div class="p1 section-style animated">
+        <p>Mi nombre es <span class="on-hover">{{myData.name}}</span>, vivo en {{myData.ubication}} pais donde naci, 
+        soy una desarrolladora {{myData.title}}  autodidacta y fanatica del café.</p>
+    </div>
+    <div class="p2 section-style animated">
+        <p>
+         {{myData.about}}
+        </p>
+    </div>
+    <about-button class="animated"></about-button>
+</main>
