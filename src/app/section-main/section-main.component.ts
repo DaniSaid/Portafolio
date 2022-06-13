@@ -2,11 +2,11 @@ import { Component, OnInit } from '@angular/core';
 import { PortfolioDataService } from 'src/app/services/portfolio-data.service'
 
 @Component({
-  selector: 'app-home',
-  templateUrl: './home.component.html',
-  styleUrls: ['./home.component.scss']
+  selector: 'app-section-main',
+  templateUrl: './section-main.component.html',
+  styleUrls: ['./section-main.component.scss']
 })
-export class HomeComponent implements OnInit {
+export class SectionMainComponent implements OnInit {
 
   myData : any;
   sentence : string = "Buenos Aires, Argentina";

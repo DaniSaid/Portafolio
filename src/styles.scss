@@ -34,6 +34,7 @@ $Portafolio-theme: mat.define-light-theme((
 @include mat.all-component-themes($Portafolio-theme);
 
 /* You can add global styles to this file, and also import other style files */
+/* paleta de colores*/
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;1,300&display=swap');
 @import '~hamburgers/_sass/hamburgers/hamburgers.scss';
 
@@ -72,8 +73,7 @@ a{
   grid-template-columns: repeat(12, 1fr);
   gap: 30px;
 }
-
-
+//----------------------------------------------------------------------
   .section-style {
     display: flex;
 

@@ -1,10 +1,10 @@
 <div class="container">
-<div class="title section-style">
-    <h1>Educación</h1>
-</div>
-<div class="izq">
-    <div class="cardsGroup">
-        <mat-card *ngFor="let edu of myData.education">
+    <div class="title section-style">
+        <h1>Educación</h1>
+    </div>
+    <div class="izq">
+        <div class="cardsGroup">
+            <mat-card *ngFor="let edu of myData.education">
                 <mat-card-header>
                     <img mat-card-avatar [src]="edu.logo" alt="icon ET N°21 DE 10">
                     <mat-card-title> {{edu.name}} </mat-card-title>
@@ -14,10 +14,10 @@
                     <p>Título obtenido: <span>{{edu.title}}</span></p>
                     <p>{{edu.dateInit}} - {{edu.dateEnd}} </p>
                 </mat-card-content>    
-        </mat-card>
+            </mat-card>
+        </div>
     </div>
-</div>
-<div class="der">
-    <img [src]="image" alt="foto de libros" width="100%" height="100%">
-</div>
+    <div class="der">
+        <img [src]="image" alt="foto de libros" width="100%" height="100%">
+    </div>
 </div>

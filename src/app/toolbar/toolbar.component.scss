@@ -9,10 +9,11 @@ header{
     background:#222;
     align-items: center; /*alinea contenido al centro de la fila*/
     justify-content: space-between;
-    box-sizing: border-box;/*hace que el padding forme parte del width*/
+   
     color: #eee;
     max-height: 50px;
     align-content: center;
+    padding: 20px 80px;
   }
 .buttonGroup{
   display: flex; 
