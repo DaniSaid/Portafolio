@@ -6,7 +6,7 @@
     margin-top: 80px;
     grid-template-areas: 
     "title title"
-    "izq der"
+    "leftSide rightSide"
     ;
 }
 
@@ -15,14 +15,13 @@
     justify-self:center;
     margin:0;
 }
-.izq{
-    grid-area: izq;
-    margin: 0 10px;
+.left{
+    grid-area: leftSide;
     justify-self: center;
     align-self: center;
 }
-.der{
-    grid-area: der;
+.right{
+    grid-area: rightSide;
     justify-self: center;
     align-self: center;
 
@@ -34,6 +33,18 @@
     }
 }
 
+.cardsGroup{
+    min-width: 300px;
+    max-width: 500px;
+    max-height: 185px;
+    padding: 0;
+    margin: 20px 0;
+    
+    overflow-x: hidden;
+    overflow-y: auto;
+    direction: rtl;
+}
+
 .section-style{
     width: 100%;
     border-radius: 0;
@@ -43,17 +54,23 @@
     color: #fff;
 }
 
-mat-card{
-    width: 100%;
-    height:100%;
-    border: solid 2px;
-    justify-content: center;
-    padding: 5px;
-    background: #EDE6DB;
 
-    img{
-        object-fit: contain; /*this makes the image in src fit to the size specified below*/
-        width: 70px; /* Here you can use wherever you want to specify the width and also the height of the <img>*/
-        height: 70px;
+mat-card{
+    direction:rtl;
+    background: none;
+    border:none;
+    border-radius: 2px;
+    background: #8a8988b6;
+
+    mat-card-title{
+        color: rgb(248, 242, 242);
     }
+    mat-card-subtitle{
+        color: rgb(217, 233, 235);
+    }
+
+    p{
+        color: #ebe6d9;
+    }
+
 }

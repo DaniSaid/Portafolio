@@ -8,50 +8,61 @@
     "about" : "Actualmente, me encuentro en búsqueda de un trabajo que me permita mejorar mis habilidades dentro del campo de programación.",
     "logoArg": " /assets/images/APLogo-darkmode.png",
     "tools": [
-                { 
-                    "id" : "1",
-                    "logoName":"Angular",
-                    "logo": " /assets/images/logos/angular-logo.svg"
-                },
+        { 
+            "id" : "1",
+            "logoName":"Angular",
+            "logo": " /assets/images/logos/angular-logo.svg"
+        },
 
-                { 
-                    "id" : "2",
-                    "logoName":"Bootstrap",
-                    "logo": " /assets/images/logos/bootstrap-logo.svg"
-                },
+        { 
+             "id" : "2",
+            "logoName":"Bootstrap",
+            "logo": " /assets/images/logos/bootstrap-logo.svg"
+        },
             
-                {
-                    "id": "3",
-                    "logoName": "JavaScript",
-                    "logo": " /assets/images/logos/javascript-logo.svg"
-                },
+        {
+             "id": "3",
+            "logoName": "JavaScript",
+            "logo": " /assets/images/logos/javascript-logo.svg"
+        },
 
-                {
-                    "id":"4",
-                    "logoName":"CSS",
-                    "logo": " /assets/images/logos/css-logo.svg"
-                },
-                {
-                    "id":"5",
-                    "logoName":"TypeScript",
-                    "logo": " /assets/images/logos/typescript-logo.svg"
-                },
-                {
-                    "id":"6",
-                    "logoName":"Figma",
-                    "logo":" /assets/images/logos/figma-logo.svg"
-                }
-        ],
+        {
+            "id":"4",
+            "logoName":"CSS",
+            "logo": " /assets/images/logos/css-logo.svg"
+        },
+        {
+            "id":"5",
+            "logoName":"TypeScript",
+            "logo": " /assets/images/logos/typescript-logo.svg"
+        },
+        {
+            "id":"6",
+            "logoName":"Figma",
+            "logo":" /assets/images/logos/figma-logo.svg"
+        }
+    ],
 
-    "education":[{
-        "name":"ET N°21 DE 10",
-        "subName":"Fragata Escuela Libertad",
-        "title":"Técnico en Computación",
-        "level":"Nivel secundario",
-        "dateInit":"2008",
-        "dateEnd":"2014",
-        "logo":" /assets/images/logos/ETN21DE10-logo.png"
-                }],
+    "education":[
+        {
+            "name":"ET N°21 DE 10",
+            "subName":"Fragata Escuela Libertad",
+            "title":"Técnico en Computación",
+            "level":"Nivel secundario",
+            "dateInit":"2008",
+            "dateEnd":"2014",
+            "logo":" /assets/images/logos/ETN21DE10-logo.png"
+        },
+        {
+            "name":"Argentina Programa",
+            "subName":"",
+            "title":"Programadora Full Stack Jr.",
+            "level":"Curso",
+            "dateInit":"2021",
+            "dateEnd":"2022",
+            "logo":" /assets/images/logos/ETN21DE10-logo.png"
+        }
+    ],
     "experience":[
         {
             "name":"Mera Solutions",
