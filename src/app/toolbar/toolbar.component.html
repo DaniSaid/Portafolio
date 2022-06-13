@@ -1,18 +1,21 @@
-<div id="container">
-    <div class="logo">
-            <img [src]="portfolio.logoArg" alt="APLogo" height="20%" width="30%">
-    </div>
-    <div class="der"> <!--conjunto de botones-->
-        <div id="homeLogo">
-            <div *ngIf="router.url === '/About'">
-                <a href="/"><mat-icon>home</mat-icon></a>
-            </div>
+<div class="menu">
+  <header>
+      <img [src]="portfolio.logoArg" alt="APLogo">
+      <div class="buttonGroup">
+        <login-button></login-button>
+        <div class="burger" (click)="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
         </div>
-        <div>
-            <login-button></login-button>
-        </div>
-        <div><!--hamb menu-->
-            4
-        </div>
-    </div>
+      </div>
+  </header>
+  
+  <nav [@slideInOut]="menuState">
+    <ul>
+      <li><a href="/">Home</a></li>
+      <li><a href="/About">About</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
 </div>

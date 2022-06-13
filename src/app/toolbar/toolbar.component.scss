@@ -4,67 +4,89 @@ $highlight: #D74E09;
 $secondHighlight:#F1E0AC;
 $darkHighlight: #d4662ecc;
 
-
-#container{
-display: grid;
-gap: 2px;
-grid-template-columns: repeat(2, 1fr);
-grid-template-rows: minmax(50px, 60px);
-padding: 5px;
-
-background-color: black;
+header{
+    display: flex;
+    background:#222;
+    align-items: center; /*alinea contenido al centro de la fila*/
+    justify-content: space-between;
+    padding: 10px 20px;
+    box-sizing: border-box;/*hace que el padding forme parte del width*/
+    color: #eee;
+    max-height: 50px;
+    align-content: center;
+  }
+.buttonGroup{
+  display: flex; 
+  justify-content: space-between;
+  gap: 40px;
 }
-
-.logo{
-    align-self: center;
-    justify-self: start;
-    margin: 0 0px;
-}
-.cnt{
-    align-self: center;
-    justify-self: end;
-}
-
-.der{
-    align-items: center;
-    justify-self: end;
-    margin: 7% 40%;
-
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 5px;
-
-    margin: 0;
-    width: 100%;
-    height: 100%;
-
-    grid-template-areas:
-    "homeLogo homeLogo buttonLogin"
-    ;
-}
-
-//elementos dentro del nav
-#homeLogo{
-    align-self: center;
-    justify-self: end;
-    grid-area: homeLogo;
-}
-
-mat-icon{
-    color: $secondHighlight;
-    font-size: 30px;
-    transition: all 300ms ease-in;
-    &:hover {
-        color: $highlight;
-    }
-}
-
-#buttonL{
-    justify-self: center;
-    align-self: center;
-    grid-area: buttonLogin;
-}
-
 img{
-    float: left;
+  width: 20%;
+}
+.burger{
+  display: block;
+  font-size: 1.2rem;
+  cursor: pointer;
+  margin-left: 75px;
+  z-index: 3;
+}
+.burger span{
+  display: block;
+  width: 30px;
+  height: 2px;
+  background: #eee;
+  margin-bottom: 6px;
+  transition: all 400ms ease-in;
+}
+
+nav{ 
+  background: rgba(51, 51, 51, 0.911);
+  position: fixed;
+  left: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 60%;
+  min-width: 230px;
+  padding: 20px;
+  padding-top: 80px;
+  z-index: 2;
+}
+nav a{
+  transition: all 400ms ease-in;
+  color: #eee;
+  display: block;
+  margin-bottom: 20px;
+  font-size: 5rem;
+}
+  
+  /* open state */
+nav.open{
+  display: flex;
+  justify-content: space-around;
+  align-content: space-around;
+  background: rgba(51, 51, 51, 0.911);
+  padding: 20px;
+  padding-top: 80px;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  position: absolute;
+  top: 0; /*ignora otros componentes y empieza desde la parte superior de la página*/
+  right: 0;
+}
+ul li{
+  padding: 0 0 95px;
+}
+  
+.burger.open span:first-child{
+  transform: rotate(45deg) translate(5px, 6px);
+}
+  
+.burger.open span:nth-child(2){
+  opacity: 0;
+  width: 0;
+}
+.burger.open span:nth-child(3){
+  transform: rotate(-45deg) translate(5px, -6px);
 }
