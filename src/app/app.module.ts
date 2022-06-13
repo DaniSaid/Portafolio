@@ -38,7 +38,6 @@ import { FooterComponent } from './footer/footer.component';
     SectionExperienceComponent,
     SectionProjectsComponent,
     FooterComponent,
-    
   ],
   imports: [
     BrowserModule,

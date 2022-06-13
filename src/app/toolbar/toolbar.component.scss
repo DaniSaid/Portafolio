@@ -28,7 +28,7 @@ img{
   font-size: 1.2rem;
   cursor: pointer;
   margin-left: 75px;
-  z-index: 1;
+  z-index: 3;
 }
 .burger span{
   display: block;
@@ -37,6 +37,20 @@ img{
   background: #eee;
   margin-bottom: 6px;
   transition: all 400ms ease-in;
+}
+
+nav{ 
+  background: rgba(51, 51, 51, 0.911);
+  position: fixed;
+  left: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 60%;
+  min-width: 230px;
+  padding: 20px;
+  padding-top: 80px;
+  z-index: 2;
 }
 nav a{
   transition: all 400ms ease-in;
@@ -47,7 +61,7 @@ nav a{
 }
   
   /* open state */
-nav{
+nav.open{
   display: flex;
   justify-content: space-around;
   align-content: space-around;
