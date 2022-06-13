@@ -9,7 +9,6 @@ header{
     background:#222;
     align-items: center; /*alinea contenido al centro de la fila*/
     justify-content: space-between;
-    padding: 10px 20px;
     box-sizing: border-box;/*hace que el padding forme parte del width*/
     color: #eee;
     max-height: 50px;
@@ -20,8 +19,12 @@ header{
   justify-content: space-between;
   gap: 40px;
 }
+figure{
+  width : 150px;
+}
 img{
-  width: 20%;
+  height:auto;
+  width: 100%;
 }
 .burger{
   display: block;
@@ -34,9 +37,12 @@ img{
   display: block;
   width: 30px;
   height: 2px;
-  background: #eee;
+  background: $secondHighlight;
   margin-bottom: 6px;
   transition: all 400ms ease-in;
+}
+.burger span:hover{
+ background: $highlight;
 }
 
 nav{ 
@@ -53,11 +59,14 @@ nav{
   z-index: 2;
 }
 nav a{
-  transition: all 400ms ease-in;
+  transition: color 400ms ease-in;
   color: #eee;
   display: block;
   margin-bottom: 20px;
   font-size: 5rem;
+}
+nav a:hover {
+  color: $highlight;
 }
   
   /* open state */
@@ -77,16 +86,4 @@ nav.open{
 }
 ul li{
   padding: 0 0 95px;
-}
-  
-.burger.open span:first-child{
-  transform: rotate(45deg) translate(5px, 6px);
-}
-  
-.burger.open span:nth-child(2){
-  opacity: 0;
-  width: 0;
-}
-.burger.open span:nth-child(3){
-  transform: rotate(-45deg) translate(5px, -6px);
 }

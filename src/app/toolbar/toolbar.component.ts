@@ -9,6 +9,7 @@ import { Router } from '@angular/router';
   styleUrls: ['./toolbar.component.scss'],
   //animacion del menu
   animations: [
+    //nav
     trigger('slideInOut', [
       state('in', style({
         transform: 'translate3d(0, 0, 0)'
@@ -19,6 +20,39 @@ import { Router } from '@angular/router';
       transition('in => out', animate('400ms ease-in-out')),
       transition('out => in', animate('400ms ease-in-out'))
     ]),
+    ///menu
+    trigger('toogleSpan',[
+      state('open', style({
+          transform: "rotate(45deg) translate(5px, 6px)",
+          background: "#D74E09"
+        })
+      ),
+      state('closed', style({
+        transform: "rotate(-45deg) translate(-5px, 6px)"
+      }))
+    ]),
+    trigger('toogleSpan2',[
+      state('open', style({
+         opacity: 100,
+         width: 0,
+         background: "#222"
+        })
+      ),
+      state('closed', style({
+        opacity: 0,
+        width: 100
+      }))
+    ]),
+    trigger('toogleSpan3',[
+      state('open', style({
+        transform: "rotate(-45deg) translate(5px, -6px)",
+        background: "#D74E09"
+        })
+      ),
+      state('closed', style({
+        transform: "rotate(45deg) translate(5px, 6px)",
+      }))
+    ])
   ]
 })
 
@@ -40,10 +74,12 @@ export class ToolbarComponent implements OnInit {
 
     });
   }
-  menuState:string = 'out';
+  menuState:string = 'close';
+  navState:string = 'out';
   
     toggleMenu() {
       // 1-line if statement that toggles the value:
-      this.menuState = this.menuState === 'out' ? 'in' : 'out';
+      this.navState = this.navState === 'out' ? 'in' : 'out';
+      this.menuState = this.menuState === 'close' ? 'open' : 'close';
     }
 }
