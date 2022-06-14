@@ -8,14 +8,11 @@ header app-toolbar{
 }
 
 main{
-    max-width: 1200px;
     margin: auto;
-    padding: 20px;
     
     background-image: url( /assets/images/layered-waves2.svg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: bottom center, 50%, 50%;
 }
 .title{
     grid-column: span 6;

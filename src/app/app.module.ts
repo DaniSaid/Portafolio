@@ -10,7 +10,7 @@ import { DragDropModule } from '@angular/cdk/drag-drop';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { HomeComponent } from './components/home/home.component';
-import { SectionMainComponent } from './section-main/section-main.component';
+import { SectionMainComponent } from './components/section-main/section-main.component';
 import { SectionToolsComponent } from './components/section-tools/section-tools.component';
 import { SectionContactComponent } from './components/section-contact/section-contact.component';
 import { AboutComponent } from './about/about.component';

@@ -34,12 +34,10 @@ $Portafolio-theme: mat.define-light-theme((
 @include mat.all-component-themes($Portafolio-theme);
 
 /* You can add global styles to this file, and also import other style files */
-/* paleta de colores*/
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;1,300&display=swap');
-@import '~hamburgers/_sass/hamburgers/hamburgers.scss';
 
 $base: #EDE6DB;
-$darkContrast: #442c2e;
+$darkContrast: #4b2b21;
 $highlight: #D74E09;
 $secondHighlight:#F1E0AC;
 $darkHighlight: #d4662ecc;
@@ -51,74 +49,84 @@ body{
   font-family: 'Poppins', sans-serif;
   overflow-x: hidden;
 }
-ul, li{
-  padding:0;
-  list-style-type: none;
-}
 main{
   padding: 100px 40px 40px;
   color: $darkContrast;
 }
-
-p{ 
-    color: $darkContrast;
+ul, li{
+  padding:0;
+  list-style-type: none;
 }
-
+p{
+  padding: 10px;
+  margin: 0;
+  font-size: 22px;
+  line-height: 30px;
+  font-family: 'Poppins', sans-serif;
+}
 a{
-    text-decoration: none;
-    color: $darkContrast;
+  text-decoration: none;
+  color: $darkContrast;
 }
+input{
+  font-family: 'Poppins', sans-serif;
+}
+
 //layout principal de la página
 .grid{
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   gap: 30px;
 }
-//----------------------------------------------------------------------
-  .section-style {
-    display: flex;
 
-    align-self: start;
-    align-items: center;
-    justify-self: start;
-    justify-content: center;
 
-    border-radius: 17px;
-    padding: 10px 5px;
-    background-color: rgba(#EFEFEE,.53);
+.section-style {
+  display: flex;
 
-    box-shadow: 0 1px 1px rgba(0,0,0,0.11), 
+  align-self: start;
+  align-items: center;
+  justify-self: start;
+  justify-content: center;
+
+  border-radius: 17px;
+  padding: 10px 5px;
+  background-color: rgba(#EFEFEE,.53);
+
+  box-shadow: 0 1px 1px rgba(0,0,0,0.11), 
               0 2px 2px rgba(0,0,0,0.11), 
               0 4px 4px rgba(0,0,0,0.11), 
               0 6px 8px rgba(0,0,0,0.11);
 
-    h1{
-      padding: 10px;
-      margin: 0;
-      font-size: 52.11px;
-    }
-    
-    h2{
-      padding: 10px;
-      margin: 0;
-      font-size: 39.09px;
-    }
-    
-    h3{
-      padding: 10px;
-      margin: 0;
-      font-size: 29.33px;
-    }
-    
-    &:hover{
-      box-shadow: 0 1px 1px rgba(0,0,0,0.25), 
-      0 2px 2px rgba(0,0,0,0.20), 
-      0 4px 4px rgba(0,0,0,0.15), 
-      0 8px 8px rgba(0,0,0,0.10),
-      0 16px 16px rgba(0,0,0,0.05);
-    }
-    
+  h1{
+    padding: 10px;
+    margin: 0;
+    font-size: 52.11px;
+    font-family: 'Poppins', sans-serif;
   }
+    
+  h2{
+    padding: 10px;
+    margin: 0;
+    font-size: 39.09px;
+    font-family: 'Poppins', sans-serif;
+  }
+    
+  h3{
+    padding: 10px;
+    margin: 0;
+    font-size: 29.33px;
+    font-family: 'Poppins', sans-serif;
+  }
+    
+  &:hover{
+    box-shadow: 0 1px 1px rgba(0,0,0,0.25), 
+    0 2px 2px rgba(0,0,0,0.20), 
+    0 4px 4px rgba(0,0,0,0.15), 
+    0 8px 8px rgba(0,0,0,0.10),
+    0 16px 16px rgba(0,0,0,0.05);
+  }
+    
+}
 
 hr {
     border: 0;
@@ -138,102 +146,66 @@ hr {
 
 }
 
-
-p{
-  padding: 10px;
-  margin: 0;
-  font-size: 22px;
-}
-
-
-/*animacion de div
-@keyframes drop-in{
-  from{
-    transform: translate(-20%, -50%);
-    opacity: 0.65;
-  }
-  to{
-    transform: translate(0%);
-  }
-}
-
-@keyframes slide-in-left {
-  from {
-    transform: translate( 30% ,20%);
-    opacity: 0.65;
-  }
-  to {
-    transform: translate(0%);
-  }
-}
-
-@keyframes slide-in-right {
-  from {
-    transform: translate( -30% ,20%);
-    opacity: 0.65;
-  }
-  to {
-    transform: translate(0%);
-  }
-}
-*/
 .on-hover{
   cursor: pointer;
   will-change: transform;
   transition: color 450ms ease-in;
+  color: $darkContrast;
 
   &:hover{
     transition: transform 150ms;
     color: $darkHighlight;
   }
 }
+.highlight{
+  cursor: pointer;
+  will-change: transform;
+  transition: color 450ms ease-in;
+  border-radius: 4px;
+  padding: 2px;
+  margin: 2px;
+  background-color: rgba(#EFEFEE,.53);
+  box-shadow: 0 0 1px rgba(0,0,0,0.25), 
+  0 1px 2px rgba(0,0,0,0.20), 
+  0 2px 4px rgba(0,0,0,0.15), 
+  ;
 
+  &:hover{
+    transition: transform 150ms;
+    color: $highlight;
+    box-shadow: 0 0px 1px rgba(0,0,0,0.25), 
+    0 1px 2px rgba(0,0,0,0.20), 
+    0 2px 4px rgba(0,0,0,0.15), 
+    0 4px 8px rgba(0,0,0,0.10),;
+  }
+}
+
+
+// main custom scrollbar
 body::-webkit-scrollbar {
-  width: 3px;               /* width of the entire scrollbar */
+  width: 3px;               
 }
 
 body::-webkit-scrollbar-track {
-  background: $base;        /* color of the tracking area */
+  background: $base;        
 }
 
 body::-webkit-scrollbar-thumb {
-  background-color: $base;    /* color of the scroll thumb */
-  border-radius: 20px;       /* roundness of the scroll thumb */
-  border: 3px solid $secondHighlight;  /* creates padding around scroll thumb */
+  background-color: $base;    
+  border-radius: 20px;       
+  border: 3px solid $secondHighlight;  
 }
-
+//containers custom scrollbar
 .scroll::-webkit-scrollbar {
-  width: 3px;               /* width of the entire scrollbar */
+  width: 3px;               
 }
 
 .scroll::-webkit-scrollbar-track {
-  background: #333;        /* color of the tracking area */
+  background: #333;        
 }
 
 .scroll::-webkit-scrollbar-thumb {
-  background-color: #333;    /* color of the scroll thumb */
-  border-radius: 20px;       /* roundness of the scroll thumb */
-  border: 3px solid #555;  /* creates padding around scroll thumb */
-}
-/*transicion usada en titulos y parrafos 
-.box-animation{
-  transition: transform 250ms;
-  will-change: transform;
-}
-
-.box-animation:hover{
-  transform: translate(2px, -10px);
-  box-shadow: 0 1px 1px rgba(0,0,0,0.25), 
-    0 2px 2px rgba(0,0,0,0.20), 
-    0 4px 4px rgba(0,0,0,0.15), 
-    0 8px 8px rgba(0,0,0,0.10),
-    0 16px 16px rgba(0,0,0,0.05);
-}
-*/
-
-// por si el sist operativo del usuario tiene activado el "reduce notion"
-@media (prefers-reduced-motion: reduce) {
-  .box-animation {
-    transition: none;
-  }
+  background-color: #333;   
+  border-radius: 20px;      
+  border: 3px solid #555;
 }
