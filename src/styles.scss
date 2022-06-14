@@ -101,21 +101,27 @@ input{
     padding: 10px;
     margin: 0;
     font-size: 52.11px;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
   }
     
   h2{
     padding: 10px;
     margin: 0;
     font-size: 39.09px;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 300;
   }
     
   h3{
     padding: 10px;
     margin: 0;
     font-size: 29.33px;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 200;
   }
     
   &:hover{
