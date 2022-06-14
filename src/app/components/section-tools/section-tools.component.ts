@@ -1,3 +1,4 @@
+import { CdkDragDrop, moveItemInArray } from '@angular/cdk/drag-drop';
 import { Component, OnInit } from '@angular/core';
 import { PortfolioDataService } from 'src/app/services/portfolio-data.service'
 
@@ -21,5 +22,11 @@ export class SectionToolsComponent implements OnInit {
     });
 
   }
-
+  onDrop(event : CdkDragDrop<string[]>){
+    if(event.previousContainer === event.container){
+      moveItemInArray(this.myData.tools,
+        event.previousIndex,
+        event.currentIndex)
+    }
+  }
 }
