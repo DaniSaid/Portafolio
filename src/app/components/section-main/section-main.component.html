@@ -2,14 +2,17 @@
     <div class="title section-style on-hover animated">
         <h1><b>Hola!</b></h1>
     </div>
-    <div class="p1 section-style animated">
-        <p>Mi nombre es <span class="highlight">{{myData.name}}</span>, vivo en {{myData.province}}, <span class="highlight">{{myData.country}}</span>, país donde nací, 
-        soy una desarrolladora {{myData.title}}  autodidacta y fanática del café.</p>
+
+    <div class="p1 animated section-style">
+        <p>Mi nombre es <a id="myPhoto" class="highlight">{{myData.name}}</a>, vivo en {{myData.province}}, <a id="countryPhoto" class="highlight">{{myData.country}}</a>, país donde nací, 
+            soy una desarrolladora {{myData.title}}  autodidacta y fanática del café.</p>
     </div>
+
     <div class="p2 section-style animated">
         <p>
          {{myData.about}}
         </p>
     </div>
+
     <about-button class="animated"></about-button>
 </main>
